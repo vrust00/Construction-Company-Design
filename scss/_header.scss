@@ -1,0 +1,24 @@
+.header{
+   position: sticky;
+   display: flex;
+   background-color: rgb(18, 11, 79);
+   justify-content: space-between;
+   align-items: center;
+   padding:24px 139px;
+   color:white; 
+   &__pages{
+      display: flex;
+      gap:37px;
+   }
+
+   &__link{
+      text-decoration: none;
+      color:white;
+      letter-spacing: 7%;
+   }
+
+   &__phone{
+      text-decoration: none;
+      color:white;
+   }
+}
