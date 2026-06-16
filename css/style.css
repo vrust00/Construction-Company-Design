@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  background-color: #E4E3E8;
 }
 
 ol, ul {
@@ -48,6 +49,24 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Thin.eot");
+  src: url("../fonts/Poppins-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Thin.woff") format("woff"), url("../fonts/Poppins-Thin.ttf") format("truetype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.eot");
+  src: url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.eot");
+  src: url("../fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 500;
+}
 .header {
   position: sticky;
   display: flex;
@@ -69,4 +88,83 @@ table {
 .header__phone {
   text-decoration: none;
   color: white;
+}
+
+.slogan {
+  position: relative;
+  color: #263640;
+}
+.slogan__background {
+  position: absolute;
+  background-color: #E4E3E8;
+  right: 0;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slogan__title {
+  position: relative;
+  margin-left: 135px;
+  font-size: 60px;
+  width: 608px;
+  padding-top: 119px;
+  line-height: 1.2;
+}
+.slogan__description {
+  color: #7591A3;
+  font-size: 16px;
+  width: 427px;
+  margin-left: 135px;
+  margin-top: 31px;
+  line-height: 1.5;
+  position: relative;
+}
+.slogan__see-work-btn {
+  margin-top: 105px;
+  margin-left: 135px;
+  padding: 19px 56px;
+  background-color: #263640;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.achievements {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 193px;
+  padding-top: 153px;
+  padding-bottom: 148px;
+}
+.achievements__title {
+  font-size: 48px;
+  width: 423px;
+}
+.achievements__subtitle {
+  font-size: 16px;
+}
+.achievements__item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.achievements__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
+}
+.achievements__img {
+  grid-column: 1;
+  grid-row: 1;
+}
+.achievements__num {
+  grid-column: 2;
+  grid-row: 1;
+}
+.achievements__description {
+  grid-column: 2;
+  font-size: 16px;
+  padding-top: 20px;
+  grid-row: 1;
 }/*# sourceMappingURL=style.css.map */

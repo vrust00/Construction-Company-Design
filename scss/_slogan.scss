@@ -1,0 +1,44 @@
+.slogan {
+   position: relative;       
+   color: #263640;
+   
+   
+   
+   &__background {
+      position: absolute;
+      background-color: #E4E3E8;
+      right: 0;
+      z-index: -1;
+      object-fit: cover;            
+   }
+
+   &__title {
+      position: relative;  
+      margin-left: 135px;
+      font-size: 60px;
+      width: 608px;
+      padding-top: 119px;
+      line-height: 1.2;
+   }
+
+   &__description {
+      color: #7591A3;
+      font-size: 16px;
+      width: 427px;
+      margin-left: 135px;
+      margin-top: 31px;
+      line-height: 1.5;
+      
+      position: relative;  
+   }
+
+   &__see-work-btn{
+      margin-top: 105px;
+      margin-left: 135px;
+      padding: 19px 56px;
+      background-color: #263640;
+      color: white;
+      font-size: 20px;
+      border-radius: 8px; 
+   }
+}
