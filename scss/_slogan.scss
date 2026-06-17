@@ -1,7 +1,7 @@
 .slogan {
    position: relative;       
    color: #263640;
-   
+   font-family: 'PFAgoraSansPro';
    
    
    &__background {
@@ -35,6 +35,7 @@
    &__see-work-btn{
       margin-top: 105px;
       margin-left: 135px;
+      margin-bottom: 86px;
       padding: 19px 56px;
       background-color: #263640;
       color: white;

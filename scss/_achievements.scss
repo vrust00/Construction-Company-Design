@@ -5,14 +5,19 @@
    gap:193px;
    padding-top: 153px;
    padding-bottom: 148px;
+   font-family: 'PFAgoraSansPro';
+
    &__title{
       font-size: 48px;
       width: 423px;
+      margin-left: 135px;
       
    }
    &__subtitle{
       font-size: 16px;
-
+      margin-top: 20px;
+      font-weight: 100;
+      margin-left: 135px;
    }
 
    &__item-container{
@@ -23,26 +28,32 @@
 
    &__item{
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-bottom: 10px;
+      grid-template-columns: 1fr 250px;
+      margin-bottom: 37px;
+      
+      align-items: center;
    }
 
    &__img{
       grid-column: 1;
       grid-row: 1;
+      margin-right: 10px;
    }
 
    &__num{
       grid-column: 2;
       grid-row: 1;
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 32px;
    }
 
    &__description{
       grid-column: 2;
       font-size: 16px;
-      padding-top: 20px;
+      margin-top: 30px;
       grid-row: 1;
-      
+      font-weight: 100;
    }
    
    
