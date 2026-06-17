@@ -10,21 +10,33 @@
 <body>
    
    <header class="header">
-      <a href="" class="header__logo">
-         <img src="images\logo.png" alt="Prospekt+ logo">
-      </a>
+   <a href="/" class="header__logo-link">
+      <img src="images/logo.png" alt="Prospekt+ logo" class="header__logo">
+   </a>
 
-      <nav class="header__pages">
-         <a href="" class="header__link">Домой</a>
-         <a href="" class="header__link">Услуги</a>
-         <a href="" class="header__link">Наши работы</a>
-         <a href="" class="header__link">О компании</a>
-      </nav>
+   
+   <nav class="header__pages">
+      <a href="/" class="header__link">Домой</a>
+      <a href="/services" class="header__link">Услуги</a>
+      <a href="/works" class="header__link">Наши работы</a>
+      <a href="/about" class="header__link">О компании</a>
+   </nav>
 
-      
-      <a href="tel:+77777777777" class="header__phone">+7 (777) 777 77 77</a>
-      
-   </header>
+   
+   <button class="header__menu-btn" id="menu-button" aria-label="Меню">
+      <img src="images\menu-btn.png" alt="" class="header__menu-icon">
+   </button>
+
+   
+   <nav class="header__menu-bar hide" id="menu-bar">
+      <a href="/" class="header__bar-link">Домой</a>
+      <a href="/services" class="header__bar-link">Услуги</a>
+      <a href="/works" class="header__bar-link">Наши работы</a>
+      <a href="/about" class="header__bar-link">О компании</a>
+   </nav>
+
+   <a href="tel:+77777777777" class="header__phone">+7 (777) 777 77 77</a>
+</header>
 
    <section class="slogan">
       <img src="images\bg.png" alt="" class="slogan__background">
@@ -147,5 +159,8 @@
          <a href="" class="footer__link">О компании</a>
       </nav>
    </footer>
+
+
+   <script src="js\menu-bar.js"></script>
 </body>
 </html>

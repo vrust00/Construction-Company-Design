@@ -1,26 +1,98 @@
-.header{
+.header {
    position: sticky;
+   top: 0;
    display: flex;
    background-color: #263640;
    justify-content: space-between;
-   align-items: center;
-   padding:24px 139px;
-   color:white; 
+   padding: 24px 139px;
+   color: white;
    font-family: 'PFAgoraSansPro';
+   z-index: 100;
 
-   &__pages{
-      display: flex;
-      gap:37px;
+   &__logo {
+      height: fit-content;
+      
+      @media screen and (max-width: 992px) {
+         padding: 0;
+      }
    }
 
-   &__link{
+   &__pages {
+      display: flex;
+      gap: 37px;
+
+      @media screen and (max-width: 992px) {
+         display: none;
+      }
+   }
+
+   &__link {
+      align-self: center;
       text-decoration: none;
-      color:white;
+      color: white;
       letter-spacing: 7%;
    }
 
-   &__phone{
+   &__bar-link {
       text-decoration: none;
-      color:white;
+      color: white;
+      letter-spacing: 7%;
+      margin-top: 15px;
    }
+
+   &__phone {
+      text-decoration: none;
+      color: white;
+      align-self: center;
+      
+      @media screen and (max-width: 992px) {
+         display: none;
+      }
+   }
+
+   // Кнопка меню (иконка)
+   &__menu-btn{
+      position: absolute;
+      right: 20px;
+      width: 50px;
+      height: 30px;
+      display: none;
+      background: none; 
+      border: none; 
+      outline: none;
+      cursor: pointer;
+       right: clamp(10px, 5vw, 30px); 
+      @media screen and (max-width: 992px) {
+         display: flex;
+      }
+   }
+
+   // Мобильное меню (выпадающее)
+   &__menu-bar {
+      position: fixed;
+      top: 70px;
+      right: clamp(10px, 5vw, 30px);  // такое же плавное движение как у кнопки
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+      background-color: #263640;
+      padding: 20px 30px;
+      gap: 15px;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      
+      
+      @media screen and (min-width: 993px) {
+         display: none !important;
+      }
+   }
+
+   @media screen and (max-width: 992px) {
+      padding: 24px clamp(20px, 14vw, 150px);
+   }
+}
+
+.hide {
+   display: none !important;
 }

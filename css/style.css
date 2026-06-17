@@ -75,26 +75,99 @@ table {
 }
 .header {
   position: sticky;
+  top: 0;
   display: flex;
   background-color: #263640;
   justify-content: space-between;
-  align-items: center;
   padding: 24px 139px;
   color: white;
   font-family: "PFAgoraSansPro";
+  z-index: 100;
+}
+.header__logo {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media screen and (max-width: 992px) {
+  .header__logo {
+    padding: 0;
+  }
 }
 .header__pages {
   display: flex;
   gap: 37px;
 }
+@media screen and (max-width: 992px) {
+  .header__pages {
+    display: none;
+  }
+}
 .header__link {
+  align-self: center;
   text-decoration: none;
   color: white;
   letter-spacing: 7%;
 }
+.header__bar-link {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 7%;
+  margin-top: 15px;
+}
 .header__phone {
   text-decoration: none;
   color: white;
+  align-self: center;
+}
+@media screen and (max-width: 992px) {
+  .header__phone {
+    display: none;
+  }
+}
+.header__menu-btn {
+  position: absolute;
+  right: 20px;
+  width: 50px;
+  height: 30px;
+  display: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  right: clamp(10px, 5vw, 30px);
+}
+@media screen and (max-width: 992px) {
+  .header__menu-btn {
+    display: flex;
+  }
+}
+.header__menu-bar {
+  position: fixed;
+  top: 70px;
+  right: clamp(10px, 5vw, 30px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  background-color: #263640;
+  padding: 20px 30px;
+  gap: 15px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 993px) {
+  .header__menu-bar {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header {
+    padding: 24px clamp(20px, 14vw, 150px);
+  }
+}
+
+.hide {
+  display: none !important;
 }
 
 .slogan {
