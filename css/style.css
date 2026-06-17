@@ -187,4 +187,23 @@ table {
   margin-top: 30px;
   grid-row: 1;
   font-weight: 100;
+}
+
+.partners {
+  font-family: "PFAgoraSansPro";
+  background-color: white;
+  padding-bottom: 150px;
+}
+.partners__title {
+  font-size: 26px;
+  text-align: center;
+}
+.partners__container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 47px;
+}
+.partners__logo {
+  padding: 32px 37px;
+  background-color: whitesmoke;
 }/*# sourceMappingURL=style.css.map */
