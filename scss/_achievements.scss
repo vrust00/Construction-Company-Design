@@ -7,28 +7,72 @@
    padding-bottom: 148px;
    font-family: 'PFAgoraSansPro';
 
+   @media screen and (max-width: 992px) {
+         display: block;
+         padding-left: 20px;
+         padding-right: 20px;
+         
+      }
    &__title{
-      font-size: 48px;
-      width: 423px;
-      margin-left: 135px;
+      font-size: 3vw;
+      width: 30vw;
+      margin-left: 40vw;
+      
+      @media screen and (max-width: 992px) {
+         margin: 0 auto;
+         font-size: 5vw;
+         width: fit-content;
+
+      }
+      @media screen and (max-width: 540px) {
+         font-size: 22px;
+         text-align: center;
+         
+      }
       
    }
    &__subtitle{
       font-size: 16px;
       margin-top: 20px;
       font-weight: 100;
-      margin-left: 135px;
+      margin-left: 40vw;
+      width: fit-content;
+      @media screen and (max-width: 992px) {
+         margin: 20px auto;
+         font-size: 3vw;
+         margin-bottom: 30px;
+      }
+      @media screen and (max-width: 540px) {
+         font-size: 16px;
+         text-align: center;
+         
+      }
    }
 
    &__item-container{
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+      margin-right: 40vw;
+      width: fit-content;
+      @media screen and (max-width: 992px) {
+         
+         margin-right: auto;
+         margin-left: auto;
+         gap:50px;
+
+
+      }
+
+      @media screen and (max-width: 540px) {
+
+         grid-template-columns: 1fr;
+      }
    }
 
    &__item{
       display: grid;
-      grid-template-columns: 1fr 250px;
+      grid-template-columns: 80px 150px;
       margin-bottom: 37px;
       
       align-items: center;
@@ -37,7 +81,7 @@
    &__img{
       grid-column: 1;
       grid-row: 1;
-      margin-right: 10px;
+      
    }
 
    &__num{
@@ -54,6 +98,7 @@
       margin-top: 30px;
       grid-row: 1;
       font-weight: 100;
+      
    }
    
    
