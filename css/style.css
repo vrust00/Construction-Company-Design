@@ -189,6 +189,11 @@ table {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 992px) {
+  .slogan__background {
+    height: 100%;
+  }
+}
 .slogan__title {
   position: relative;
   margin-left: 135px;

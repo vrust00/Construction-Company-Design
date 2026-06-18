@@ -10,7 +10,13 @@
       background-color: #E4E3E8;
       right: 0;
       z-index: -1;
-      object-fit: cover;            
+      object-fit: cover;   
+      
+      @media screen and (max-width: 992px) {
+         
+         height: 100%;
+      }    
+
    }
 
    &__title {
